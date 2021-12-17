@@ -15,12 +15,13 @@ The purpose of our project is to find correlations between the stock price of Te
 
 ***Basic info:*** The data with the quotes from different speakers are from QuoteBank. From the QuoteBank data we filtered quotes that were mentioned by the man the myth the legend Mr Elon Musk himself and wrote the it on a new file.
 
-***Preprocessing:*** Since during the weekends the stock markets are closed, it was necessary to move all quotes that were posted during weekends to be on the next 
-Monday. 
+***Preprocessing:*** Since during the weekends the stock markets are closed, it was necessary to move all quotes that were posted during weekends to be on the next Monday. 
 
 <img width="1638" alt="Screenshot 2021-12-17 at 8 51 32" src="https://user-images.githubusercontent.com/92207222/146501806-c1558819-3296-4a2e-b20f-a08bae2853a5.png">
 
 ***Figure 1:*** The number of Elon Musk quotes in respective to time. 
+
+
 
 ### Stock data
 
@@ -32,9 +33,14 @@ Monday.
 
 ***Figure 2:*** Tesla's stock price through the years
 
+
+
 ## Phase one: Create sentimental analysis
 
+
 The quality of each quote was examined by parsing each quote into separate words and by tokenizing the words. Each word played a signifficant role in shifting the stock market price. In addition, another factor that we believe impacts the stock price of Tesla is the volume of posts made by Musk each day he posted.
+
+
 
 ![Screenshot 2021-12-16 at 12 51 25](https://user-images.githubusercontent.com/92207222/146358193-db438f2d-9e85-464b-9c4a-8af4fbd1d26f.png)
 
@@ -42,11 +48,15 @@ The quality of each quote was examined by parsing each quote into separate words
 
 For the analysis we used two different pre-trained machine learning methods of sentiment analysis, which were Valder and Textblob sentiment analysis models. The programming portion of our project consisted of three primary steps: data filtering, performing sentiment analysis to the filtered data, and creating a correlation from Tesla's stock price data. Additionally, we wanted to create a model that can predict future stock price based on quotes. The two models that were used to process the quotes said by Musk were the Vader and the Textblob methods. 
 
+
+
 ![Screenshot 2021-12-15 at 19 49 17](https://user-images.githubusercontent.com/92207222/146238725-f41d59f1-624e-43cb-b37c-31b133ec6fbb.png)
 
 ***Picture 2:*** The Vader method
 
 The Vader sentimental analysis model returns the compound score that informs if the quote is positive (compound>=0.05), neutral(-0.5>compound>0.05) or negative(compound >= -0.05). It is a great open-source tool designed to sentiments expressed in social media. It has a MIT License. In our project we specifically used the Vader tool to analyse the text from the quotes. The tool can recognise typical negations, such as "Tesla is not good" or "Model S wasn't very good". In addition, it spots punctuations such as exclamation marks and is thus capable. ofgiving these words more sentiment intesity. An example could the following "Tesla is Good!!!". The Vader tool can also recognize words written with caps lock to give them more sentimental intesity.
+
+
 
 ![Screenshot 2021-12-15 at 21 05 53](https://user-images.githubusercontent.com/92207222/146249209-00a8754e-a9d2-41c8-9826-02dca00f1ef6.png)
 
@@ -82,6 +92,7 @@ We can see that both analysis indicate similar results. The quotes consisted mos
 ***"I was always crazy on Twitter" - Elon Musk ***
 
 https://www.dontdiewondering.com/elon-musks-most-controversial-tweets/
+
 
 <img width="1616" alt="Screenshot 2021-12-16 at 12 17 18" src="https://user-images.githubusercontent.com/92207222/146352961-00c2a1e3-08fd-418a-982a-a03dad7e3141.png">
 
