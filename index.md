@@ -112,14 +112,9 @@ Based on t-tests conducted the difference between the two models was statistical
 ## The impact of the quotes on the stock price
 
 
-*"I was always crazy on Twitter" - Elon Musk *
-
-https://www.dontdiewondering.com/elon-musks-most-controversial-tweets/
-
-
 <img width="1616" alt="Screenshot 2021-12-16 at 12 17 18" src="https://user-images.githubusercontent.com/92207222/146352961-00c2a1e3-08fd-418a-982a-a03dad7e3141.png">
 
-***Figure 6:*** Analysing correlation
+***Figure 6:*** Correlation between returns and vader sentiment continuous
 
 
 Generally speaking we can see that when the quotes had a value of -0.2 to 0.4 the returns had a general turnover rate between -0.05 and 0.05. We could state that while the quotes were on a neutral level, the impact on the returns of the stocks was also on a controlled level. However some interesting exceptions linger in the correlation. For example, the stock price didn't ever drop signifficantly when the quote consisted of majourly of negative quotes. The chart can be easily misleading if we don't keep in mind the fact that each negative quote only tells the average of the score of words that it consisted of. This does not necessarily mean that something bad was said about Tesla. However, as picture 4 indicates, Elon Musk has provenly been giving quotes with a negative ringing which have inreturn impacted negatively on the stock price. 
