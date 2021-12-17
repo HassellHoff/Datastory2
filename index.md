@@ -9,13 +9,13 @@ The purpose of our project is to find correlations between the stock price of Te
 
 
 
-## The data and preprocessing
+## Phase one and two: Loading the datasets and creating the dataframes
 
-### QuoteBank data
 
-***Basic info:*** The data with the quotes from different speakers are from QuoteBank. From the QuoteBank data we filtered quotes that were mentioned by the man the myth the legend Mr Elon Musk himself and wrote the it on a new file.
+### Quote data
 
-***Preprocessing:*** Since during the weekends the stock markets are closed, it was necessary to move all quotes that were posted during weekends to be on the next Monday. 
+
+***Basic info:*** The data with the quotes from different speakers are from QuoteBank from 2015 to 2020. From the QuoteBank data we filtered quotes that were mentioned by Mr Elon Musk himself and wrote the it on a new file.
 
 <img width="1638" alt="Screenshot 2021-12-17 at 8 51 32" src="https://user-images.githubusercontent.com/92207222/146501806-c1558819-3296-4a2e-b20f-a08bae2853a5.png">
 
@@ -23,9 +23,10 @@ The purpose of our project is to find correlations between the stock price of Te
 
 
 
-### Stock data
 
-***Basic info:*** The Tesla stock price data was imported from Yahoo Finance. The data has the high, low, open, close, volume and adj close values. '
+### Tesla stock data
+
+***Basic info:*** The Tesla stock price data was imported from Yahoo Finance. The data has the high, low, open, close, volume and adj close values.
 
 ***Preprocessing:*** The dataset's start and end dates were adjusted to match with the quote data
 
@@ -35,7 +36,19 @@ The purpose of our project is to find correlations between the stock price of Te
 
 
 
-## Phase one: Create sentimental analysis
+## Phase three: Quotations preprocessing
+
+***The process consisted of the following steps:***
+
+1. Remove punctuation: to reduce the sparsity of data
+2. Casefolding: due to the small size of the dataset it was necessary to reduse the sparsity of the data by using 'removed_punctuation'. This returns lowercased strings
+3. Tokenization: using the function 'word_tokenize' to determine the 10 most common words of the quotes
+4. Removing stop words: a method that drops some unnecessary values that are on the 'stopwords list' -> gives us quotes with more meaningful words for our analysis
+5. Lemmatization: method that maps all forms of a single word to a single form -> benefits us in future analysis
+
+
+
+## Phase Four: Analysing Elon Musk's quotation
 
 
 The quality of each quote was examined by parsing each quote into separate words and by tokenizing the words. Each word played a signifficant role in shifting the stock market price. In addition, another factor that we believe impacts the stock price of Tesla is the volume of posts made by Musk each day he posted.
