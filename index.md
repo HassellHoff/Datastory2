@@ -30,9 +30,13 @@ The purpose of our project is to find correlations between the stock price of Te
 
 ***Preprocessing:*** The dataset's start and end dates were adjusted to match with the quote data
 
+
+*First Tesla crush in June 2016 raised the amount of quotes significantly for the following few months*
+
 <img width="385" alt="Screenshot 2021-12-17 at 9 22 11" src="https://user-images.githubusercontent.com/92207222/146505557-6a81ea89-fe1b-43e6-af6c-87f6fa03b0de.png">
 
 ***Figure 2:*** Tesla's stock price through the years
+
 
 
 
@@ -61,7 +65,7 @@ Elon Musk's quotations to get an insight of our data and to which extent we can 
 We see that the first two words are Tesla and cars, which seems to be the proheminents topic and agrees with our basic hypothesis which highlights the interest of Elon Musk towards Tesla and the automotive industry among others.
 
 
-![Screenshot 2021-12-16 at 12 51 25](https://user-images.githubusercontent.com/92207222/146358193-db438f2d-9e85-464b-9c4a-8af4fbd1d26f.png)
+![Screenshot 2021-12-17 at 23 53 09](https://user-images.githubusercontent.com/92207222/146612358-bad681a9-673f-4b26-a94d-13dfe3a08ba9.png)
 
 ***Picture 1:*** The process of the data handling
 
@@ -115,12 +119,12 @@ https://www.dontdiewondering.com/elon-musks-most-controversial-tweets/
 
 <img width="1616" alt="Screenshot 2021-12-16 at 12 17 18" src="https://user-images.githubusercontent.com/92207222/146352961-00c2a1e3-08fd-418a-982a-a03dad7e3141.png">
 
-***Figure 6:*** Correlation between the stock price and words used by Elon Musk
+***Figure 6:*** Analysing correlation
 
 
-Generally speaking we can see that when the quotes had a value of -0.2 to 0.4 the returns had a general turnover rate between -0.05 and 0.05. We could state that while the quotes were on a neutral level, the impact on the returns of the stocks was also on a controlled level. However some interesting exceptions linger in the correlation. For example, the stock price didn't ever drop signifficantly when the quote consisted of majourly of negative quotes. The chart can be easily misleading if we don't keep in mind the fact that each negative quote only tells the average of the score of words that it consisted of. This does not necessarily mean that something bad was said about Tesla. However, as picture 4 indicates, Elon Musk has provenly been giving quotes with a negative ringing which have inreturn impacted negatively on the stock price.
+Generally speaking we can see that when the quotes had a value of -0.2 to 0.4 the returns had a general turnover rate between -0.05 and 0.05. We could state that while the quotes were on a neutral level, the impact on the returns of the stocks was also on a controlled level. However some interesting exceptions linger in the correlation. For example, the stock price didn't ever drop signifficantly when the quote consisted of majourly of negative quotes. The chart can be easily misleading if we don't keep in mind the fact that each negative quote only tells the average of the score of words that it consisted of. This does not necessarily mean that something bad was said about Tesla. However, as picture 4 indicates, Elon Musk has provenly been giving quotes with a negative ringing which have inreturn impacted negatively on the stock price. 
 
-*First Tesla crush in June 2016 raised the amount of quotes significantly for the following few months*
+What needs to be noted when analysing and drawing hypothesis from correlations between stocks and something else, is that we are ignoring all other factors from the list, such as overall market situations, a new Tesla model coming out, price of raw materials going up etc. However, in the case of Tesla we are talking about a unique company that has strived to make itself as self succifient as a modern company possibly can. 
 
 
 
